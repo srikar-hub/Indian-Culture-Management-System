@@ -1,0 +1,82 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="{% static 'festive_season.css' %}">
+    <style></style>
+</head>
+<body>
+	<main>
+		<h1>
+      Festive Season
+    </h1>
+  
+		<h2>Festivals in India: Celebrating Diversity and Unity</h2>
+
+		<h3>Introduction</h3>
+  <p>
+Festivals play a significant role in Indian culture, representing the rich diversity and cultural heritage of the country. With a multitude of religions, languages, and traditions, India boasts a calendar filled with festivals celebrated throughout the year. These festivals hold immense importance in the lives of Indians, fostering a sense of unity, joy, and communal harmony.</p>
+
+		<h3>The Importance of Festivals</h3>
+
+		<p><b>Celebrating Diversity</b>: One of the most notable aspects of Indian festivals is their diversity. Each festival is unique to a particular region, religion, or community, showcasing the cultural mosaic of the country. From Diwali, the festival of lights celebrated by Hindus, to Eid-ul-Fitr, the Muslim festival marking the end of Ramadan, and Christmas, commemorating the birth of Jesus Christ, India's festivals represent various beliefs and traditions.</p>
+
+			<p><b>Strengthening Bonds</b>: Festivals serve as occasions for families and communities to come together and bond over shared traditions, rituals, and festivities. They provide opportunities for people to reconnect with their roots, strengthen familial ties, and create lasting memories.</p>
+
+			<p><b>Promoting Cultural Exchange</b>: In a country as diverse as India, festivals serve as platforms for cultural exchange and understanding. People from different backgrounds come together to participate in each other's festivals, fostering mutual respect, tolerance, and appreciation for diversity.</p>
+
+		<h3>Key Festivals in India</h3>
+
+		<p><b>Diwali</b>: Diwali, also known as the festival of lights, is one of the most widely celebrated festivals in India. Symbolizing the victory of light over darkness and good over evil, Diwali is marked by the lighting of lamps, fireworks, exchanging sweets, and offering prayers to Goddess Lakshmi.</p>
+
+			<p><b>Holi</b>: Holi, the festival of colors, is celebrated with much enthusiasm across India. It marks the arrival of spring and the triumph of good over evil. During Holi, people engage in playful activities, smearing each other with colored powders and water, and indulging in festive delicacies.</p>
+
+			<p><b>Eid-ul-Fitr</b>: Eid-ul-Fitr, also known as the "Festival of Breaking the Fast," is celebrated by Muslims worldwide. It marks the end of Ramadan, the holy month of fasting, and is a time for feasting, prayers, and charity. Families and friends gather to share meals and exchange gifts. </p>
+
+		<h3>Gallery</h3>
+	<div class="gallery">
+        <div class="gallery-item">
+            <img src="https://allthatsinteresting.com/wordpress/wp-content/uploads/2023/05/colorful-holi-crowd.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="https://templeconnect.com/wp-content/uploads/2023/11/Diwali.jpg" alt="Image 2" height="300">
+        </div>
+        <div class="gallery-item">
+            <img src="https://c.ndtvimg.com/2023-10/ng82g4e_durga-puja_625x300_06_October_23.jpg" alt="Image 3">
+        </div>
+        <!-- Add more images as needed-->
+        <div class="gallery-item">
+            <img src="https://c.ndtvimg.com/2020-04/pnod9ttc_ramadan_625x300_23_April_20.jpg" alt="Image 4">
+        </div>
+		 <div class="gallery-item">
+            <img src="https://karmictourism.com/wp-content/uploads/2021/05/Athachamayam_03-1024x377.jpg" alt="Image 5">
+        </div>
+		 <div class="gallery-item">
+            <img src="https://images.herzindagi.info/image/2023/Oct/karwa-chauth-puja-timings.jpg" alt="Image 5">
+        </div>
+    </div> 
+
+
+		<h3>Conclusion</h3>
+
+<p>Festivals hold immense cultural, social, and religious significance in India, embodying the country's ethos of diversity, unity, and harmony. Through vibrant celebrations, Indians come together to rejoice in their shared heritage, strengthen bonds, and promote mutual understanding. Festivals in India are not just events; they are expressions of joy, love, and togetherness that enrich the cultural fabric of the nation.
+    </p>
+    
+	</main>
+	<div class="diagonal-bg">
+		<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='100%' y1='0' x2='1' y2='100%' stroke='#FF4B3B' stroke-width='30%'/>
+
+        </svg>
+
+	</div>	
+    <script>
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+              $(".diagonal-bg svg line").attr("stroke-width",  ((30 + scroll/10)  + "%"));
+              //30 is the starting width
+              //alter the amount of growth by changing scroll/x
+          });
+        </script>
+</body>

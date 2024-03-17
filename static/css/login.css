@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    background-image: url("{% static 'backgroundLoginPage.jpg' %}");
+    background-size: cover;
+   
+}
+.container{
+  
+        margin: auto;
+        width: 500px;
+        height: 380px;
+        border: 1px solid black;
+        margin-top:200px;
+        background-color:white;
+        
+        border-radius: 10px;      
+        
+}
+.div1{
+    text-align: left;
+    color:black;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 45px;
+    margin-left: 45px;
+
+}
+.username{
+    color: black;
+    margin-top: 30px;
+    margin-left: 45px;
+    position: relative;
+   
+}
+.password{
+    margin-left: 45px;
+    color:black;
+
+    margin-top: 5px;
+}
+
+.text1{
+    margin-left: 45px;
+    color:black;
+
+}
+.input{
+    margin-left: 45px;
+    /* font-size: 1.5rem; */
+    padding:10px 0px 10px 2px;
+    border-radius: 10px;
+    font-style: serif;
+    text-align: start;
+    width:275px;
+    font-size: 1.2rem;
+    
+}
+.checkbox{
+    margin-left: 45px;
+    margin-top: 5px;
+}
+.button{
+    height: 30px;
+    width: 300px;
+    background-color:black;
+    margin-top: 10px;
+    margin-left: 45px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 4px;
+}
+.button:active{
+
+    background-color:blue;
+    transition: active;
+}
+.newuser{
+    margin-top: 25px;
+    margin-left: 45px;
+   
+}
+a{
+    text-decoration: none;
+}
+.forgot{
+    margin-left: 35px;
+}
+
+

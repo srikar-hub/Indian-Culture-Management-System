@@ -1,0 +1,302 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight:bolder;
+}
+
+body{
+    background-color:#fff;
+    font-family: 'Montserrat';
+    font-size: 22px;
+}
+
+.hero{
+    position: relative;
+    text-align: center;
+}
+
+img{
+    margin-top:50px;
+    width: 95%; /* Ensure the image takes full width of its container */
+}
+
+.hero-text{
+    position: absolute;
+    top: 50%; /* Position the text at the center vertically */
+    left: 50%; /* Position the text at the center horizontally */
+    transform: translate(-50%,-50%);
+    width:100%;
+}
+
+.hero-text h1{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #fff;
+}
+
+.hero-text p{
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 0.5rem 0 2rem 0;
+}
+
+.hero-text select{
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.hero-text select:hover{
+    background-color: #fff;
+    color:black;
+}
+
+#img2{
+    /* margin-top: 50px; */
+    margin-top: 25px;
+    margin-left: 40px;
+    width:450px;
+    height:300px;
+    background-size: cover;
+    display: inline-block;
+}
+
+#img3{
+
+
+    margin-top: 25px;
+    display: inline-block;
+    width:450px;
+    height:300px;
+    margin-left: 150px;
+    background-image: url(../IMAGES/festive_homepage.jpeg);
+    background-size: cover;
+
+}
+
+#img4{
+    margin-top: 25px;
+    display: inline-block;
+    width:450px;
+    height:300px;
+    margin-left: 45px;
+    background-image: url(../IMAGES/temples_mainpage.jpeg);
+    background-size: cover;
+}
+
+#img5{
+    margin-top: 25px;
+    display: inline-block;
+    width:450px;
+    height:300px;
+    margin-left: 150px;
+    background-image: url(../IMAGES/namaste_mainpage.jpg);
+    background-size: cover;
+
+
+}
+
+.destination {
+    text-align: center;
+    margin-top: 90px; /* Adjust as needed */
+    background-color: rgb(255, 157, 0);
+
+  }
+
+.destination-content {
+    max-width: 600px; /* Adjust the maximum width of the content */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.destination-content h1{
+    font-size: 1.3rem;
+    color:rgb(255, 157, 0)
+}
+
+.img-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between img2 and img3 */
+  }
+
+  .img-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image {
+    width: 450px;
+    height: 300px;
+    background-size: cover;
+    border-radius: 8px;
+  }
+
+  .img-heading {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #fff;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
+  .text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .number {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .number {
+    color: rgb(255, 157, 0) /* Change to your desired color */
+  }
+
+  .description {
+    font-size: 1.2em;
+    color: #aaa;
+  }
+
+  .marquee-container{
+    margin-top:50px;
+    margin-bottom: 50px;;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+    margin-left:20px;
+    margin-right:20px;
+}
+.gallery-item {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+
+    height: 100%;
+    display: block;
+}
+
+/* Set type preferences for headings. */
+
+h2 {
+    z-index: 1;
+    font-family:'Montserrat';
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+.h1-poems{
+    margin-top:50px;
+    text-align: center;
+    background-color: rgb(255, 157, 0);
+    margin-bottom: 10px;
+}
+
+.h1-poems h1{
+    margin-top:10px;
+    font-size: 1.5rem;
+    color: #fff;
+
+}
+  #flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 15px; /* Adjust gap between poems */
+    background-color: rgb(255, 157, 0);
+
+  }
+
+  .poem-container {
+    flex-basis: calc(50% - 20px); /* Adjust width of each poem container */
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+
+  .poem {
+
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    text-align: left;
+    background-color: rgb(255, 157, 0);
+    border-radius: 8px;
+    color: #fff;
+
+  }
+
+  .poem h1,
+  .poem h2 {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .poem p {
+    margin-bottom: 15px;
+    line-height: 1.45em;
+  }
+
+  .poem h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+
+  .poem h2 {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 30px;
+  }
+
+  .poem h2+p:first-letter {
+    float: left;
+    font-size: 40px;
+    margin: 12px 5px 0px 0px;
+  }
+
+  .poem p:first-line {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+  }
+
+  .poem p:last-child {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+
+
+
+

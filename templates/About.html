@@ -1,0 +1,43 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'About.css' %}" />
+    <title>About</title>
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+    <div id="space">
+      <p  class="para">ICMS - Connecting Cultures,Nurturing Traditions.</p>
+      <br />
+      <p class="para">
+        Welcome to ICMS, your gateway to a seamless integration of Indian
+        culture in the modern world.
+      </p>
+
+      <p class="para">
+        At ICMS, we understand the importance of preserving and celebrating the
+        rich tapestry of Indian heritage. Our platform is designed to bring
+        together the essence of tradition and the efficiency of modern
+        management systems, creating a harmonious blend that resonates with the
+        diverse and vibrant spirit of India.
+      </p>
+      <br />
+      <p id="mission">Our Mission:</p>
+      <br />
+      <p class="parai">
+        <i>Empowering Cultural Connections, Preserving Traditions.</i>
+      </p>
+      <br />
+      <p class="para">
+        At the heart of ICMS is a commitment to empower individuals,
+        organizations, and communities to manage and celebrate Indian culture in
+        a dynamic and evolving global landscape. We believe in the vitality of
+        preserving traditions while embracing innovation and progress.
+      </p>
+    </div>
+  <img src="{% static 'about.jpg' %}" alt="" class="image">
+      
+  </body>
+</html>

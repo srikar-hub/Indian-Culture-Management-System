@@ -1,0 +1,207 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="{% static 'home.css'%}">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="{% static 'footer.css'%}">
+    <link rel="stylesheet" href="{% static 'navbar.css'%}">
+    <link rel="icon" href="{% static 'fevicon.png' %}" type="image/x-icon">
+
+</head>
+<body>
+  {% include 'navbar.html' %}
+  <div class="hero">
+    <img alt="HerpImg" src="{% static 'home_main.png'%}"/>
+    <div class="hero-text">
+      <h1>Discover India's Rich Tapestry of Traditions</h1>
+      <p>Where Tradition meets Innovation</p>
+      <a class="nav-links" href="{% url 'flipbook' %}" >Book Demo</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="text-block">
+      <div class="number">1.3 Billion</div>
+      <div class="description">Vibrant Culture</div>
+    </div>
+    <div class="text-block">
+      <div class="number">30,000+</div>
+      <div class="description">Diverse Festivals</div>
+    </div>
+    <div class="text-block">
+      <div class="number">365</div>
+      <div class="description">Days of Celebration</div>
+    </div>
+  </div>
+  <div class="destination">
+    <div class="destination-content">
+      <h1>Diversity and Unity: Exploring India's Cultural Landscape</h1>
+    </div>
+    <div class="img-container">
+      <div class="img-wrapper">
+        <a href="{% url 'books' %}">
+        <div class="image" id="img2" style="background-image:url('{% static "books_homepage.jpg"%}')"></div>
+      </a>
+        <h2 class="img-heading">Books</h2>
+      </div>
+      <div class="img-wrapper">
+        <a href="{% url 'festive' %}">
+        <div class="image" id="img3" style="background-image:url('{% static "festive_homepage.jpeg"%}')"></div>
+      </a>
+        <h2 class="img-heading">Festive Season</h2>
+      </div>
+    </div>
+    <div class="img-container">
+      <div class="img-wrapper">
+        <a href="{% url 'temples' %}">
+        <div class="image" id="img4" style="background-image:url('{% static "temples_mainpage.jpeg"%}')"></div>
+       </a>
+        <h2 class="img-heading">Temples</h2>
+      </div>
+      <div class="img-wrapper">
+        <a href="{% url 'traditions' %}">
+        <div class="image" id="img5" style="background-image:url('{% static "namaste_mainpage.jpg"%}')"></div>
+        </a>
+        <h2 class="img-heading">Traditions</h2>
+      </div>
+
+    </div>
+    <div class="destination-content">
+      <h1>Diversity and Unity: Exploring India's Cultural Landscape</h1>
+    </div>
+  </div>
+  <div class="marquee-container">
+    <marquee>* Diversity in Indian Cultures * Art and Architecture * Festivals and Celebrations * Social Customs and Etiquette * Modern Influences on Indian Cultures *</marquee>
+  </div>
+  <div class="gallery">
+    <div class="gallery-item">
+        <img src="https://allthatsinteresting.com/wordpress/wp-content/uploads/2023/05/colorful-holi-crowd.jpg" alt="Image 1">
+    </div>
+    <div class="gallery-item">
+        <img src="https://templeconnect.com/wp-content/uploads/2023/11/Diwali.jpg" alt="Image 2" height="300">
+    </div>
+    <div class="gallery-item">
+        <img src="https://c.ndtvimg.com/2023-10/ng82g4e_durga-puja_625x300_06_October_23.jpg" alt="Image 3">
+    </div>
+    <!-- Add more images as needed-->
+
+</div>
+<div class="gallery">
+  <div class="gallery-item">
+    <img src="https://c.ndtvimg.com/2020-04/pnod9ttc_ramadan_625x300_23_April_20.jpg" alt="Image 4">
+</div>
+<div class="gallery-item">
+    <img src="https://karmictourism.com/wp-content/uploads/2021/05/Athachamayam_03-1024x377.jpg" alt="Image 5">
+</div>
+<div class="gallery-item">
+    <img src="https://images.herzindagi.info/image/2023/Oct/karwa-chauth-puja-timings.jpg" alt="Image 5">
+</div>
+</div>
+<div class="h1-poems">
+<br>
+<h1>About Indian Culture</h1>
+</div>
+<div id="flex-container">
+  <div class="poem-container">
+    <div class="poem">
+      <!-- First poem content -->
+      <p>
+        Observed with curiosity, <br>
+        Filled with adventure.<br>
+        A huge variety is present in,<br>
+        Our beautiful Indian Culture. <br>
+          </p>
+        <p>
+        From yellow to pale, dark or white, <br>
+        People are colored in different ways.<br>
+        But still united, all are Indians, <br>
+        May each one has a diiferent race. <br>
+          </p>
+        <p>
+        From mountains to plains and coast, <br>
+        A huge variety of clothes at all <br>
+        Every culture in one country,<br>
+        The flag of nation stands up tall. <br>
+          </p>
+        <p>
+        Colours are bend so beautiful, <br>
+        Creating a fine clothing mixture. <br>
+        A huge variety is present in,  <br>
+        Our beautiful Indian culture. <br>
+        </p>
+          <h2>- by Raghav Bathla</h2>
+        <img src="{% static 'poems_mainpage.jpg' %}" width="80" height="400">
+    </div>
+  </div>
+  <div class="poem-container">
+    <div class="poem">
+      <!-- Second poem content -->
+      <p>
+        Indian has a beautiful  <br>
+        Culture & Heritage, <br>
+        From Red fort to Ramayana  <br>
+        written by Valmiki sage. <br>
+          </p>
+        <p>
+        India has beautiful  <br>
+        Tajmahal in Agra, <br>
+        & is popular in dances  <br>
+        like Kathak & Bhangra.<br>
+          </p>
+        <p>
+        India is famous for <br>
+        Basmati rice, <br>
+        Which is very  <br>
+        tasty & nice. <br>
+          </p>
+        <p>
+        India's daily food <br>
+        is Dal-Roti,<br>
+        And village people  <br>
+        generally wear kurta-dhoti.<br>
+          </p>
+          <p>
+        Indian women wear <br>
+        suits & saris,<br>
+        And one can find  <br>
+        lots of Ghodagadhis <br>
+          </p>
+        <p>
+        Women here wear<br>
+        Bangles & Bindi, <br>
+        Each Indian knows Hindi <br>
+         <br>
+          </p>
+        <p>
+        All Indians live in unity, <br>
+        & it's a great beauty! <br>
+        So visit my country INDIA,<br>
+        It's one of the most cultured <br>
+              Country in Asia!!!!<br>
+
+          </p>
+           <h2> - by Manasi Gupta</h2>
+    </div>
+  </div>
+</div>
+<div class="footer-basic">
+  <footer>
+      <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+      <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Home</a></li>
+          <li class="list-inline-item"><a href="#">Contact</a></li>
+          <li class="list-inline-item"><a href="#">About</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="copyright">ICMS © 2018</p>
+  </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

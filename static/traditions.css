@@ -1,0 +1,67 @@
+.hero{
+    position: relative;
+    text-align: center;
+}
+
+img{
+    margin-top:50px;
+    width: 95%; /* Ensure the image takes full width of its container */
+}
+
+.hero-text{
+    position: absolute;
+    top: 50%; /* Position the text at the center vertically */
+    left: 50%; /* Position the text at the center horizontally */
+    transform: translate(-50%,-50%);
+    width:100%;
+}
+
+.hero-text h1{
+    font-size: 5rem;
+    font-weight: 800;
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #fff;
+}
+
+.hero-text p{
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 0.5rem 0 2rem 0;
+}
+
+.hero-text select{
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.hero-text select:hover{
+    background-color: #fff;
+    color:black;
+}
+
+.hero1{
+    margin-top:50px;
+    position: relative;
+    text-align: center;
+}
+
+.hero1-text h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #000;
+}
+
+.hero1-text p{
+  font-size: 2.5rem;
+    color: #000;
+    padding: 0.5rem 0 2rem 0;
+}

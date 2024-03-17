@@ -1,0 +1,41 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="{% static 'navbar.css'%}">
+</head>
+  <body>
+    <nav class="NavbarItems">
+      <h1 class="navbar-logo">ICMS</h1>
+      <ul class="nav-menu">
+        <li>
+          <a class="nav-links" href="{% url 'home' %}">
+            <i class="fa-solid fa-house"></i>
+            Home
+          </a>
+        </li>
+        <li>
+          <a class="nav-links" href="{% url 'about' %}">
+            <i class="fa-solid fa-circle-info"></i>
+            About
+          </a>
+        </li>
+        <li>
+          <a class="nav-links" href="{% url 'contact' %}">
+            <i class="fa-solid fa-address-book"></i>
+            Contact
+          </a>
+        </li>
+        <li>
+          <a class="nav-links-moblie" href="{% url 'login' %}">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            Logout
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

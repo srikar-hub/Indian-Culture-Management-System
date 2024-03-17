@@ -1,0 +1,61 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="{% static 'traditions.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <script>
+  function redirectToPage() {
+    var dropdown = document.getElementById("dropdown");
+    var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+
+    // Open the selected page in a new tab
+    if (selectedValue === "Athidhi Devo Bhava") {
+      window.open("{% url 'adb' %}", "_blank");
+    } else if (selectedValue === "Nails") {
+      window.open("{% url 'nails' %}", "_blank");
+    } else if (selectedValue === "Namaste") {
+      window.open("{% url 'namaste' %}", "_blank");
+    } else if (selectedValue === "Arranged Marriage") {
+      window.open("{% url 'am' %}", "_blank");
+    } else if (selectedValue === "Holy Cow") {
+      window.open("{% url 'holycow' %}", "_blank");
+    }
+  }
+</script>
+</head>
+<div>
+  {% include 'navbar.html' %}
+  <div class="hero">
+    <img alt="HerpImg" src="https://www.authenticindiatours.com/app/uploads/2021/02/Customs-and-traditions-in-Indian-culture-Kathakali-1400x550-c-default.jpg"/>
+    <div class="hero-text">
+      <h1>Colors of Tradition</h1>
+      <p>Painting the Landscape of Indian Cultural Heritage</p>
+      <select id="dropdown" onchange="redirectToPage()">
+        <option value="default">Customs</option>
+        <option value="Nails">Nails</option>
+        <option value="Athidhi Devo Bhava">Athidhi Devo Bhava</option>
+        <option value="Namaste">Namaste</option>
+        <option value="Arranged Marriage">Arranged Marriage</option>
+          <option value="Holy Cow">Holy cow</option>
+      </select>
+    </div>
+      <div class="hero1">
+          <h1>Traditions in India</h1>
+          <p>Traditions in India encompass a kaleidoscope of rituals, festivals, beliefs, and customs deeply ingrained in the fabric of society.
+              Rooted in millennia-old history, these traditions reflect the country's diverse cultural landscape, shaped by various religions, languages, and regions.
+              From the colorful festivities of Diwali, Holi, and Eid to the solemn observances of Navaratri and Ramadan, each tradition carries its unique significance, fostering a sense of unity amidst diversity.
+              Family plays a central role in upholding these traditions, with ceremonies like weddings and religious rituals serving as occasions for familial bonding and community cohesion.
+              Moreover, India's traditions extend beyond ceremonies, permeating daily life through practices such as yoga, Ayurveda, and classical arts like dance and music.
+              Despite modernization and globalization, these traditions remain resilient, evolving yet retaining their essence, serving as a testament to India's rich cultural heritage and enduring identity.
+          </p>
+
+          </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="{% static 'books.css' %}">
+     <link rel="icon" href="{% static 'bookRename.png' %}" type="image/x-icon">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <div class="hero">
+        <img alt="HerpImg" src="{% static 'books_mainpage.webp' %}"/>
+        <div class="hero-text">
+          <h1>Books are the mirrors of the soul.</h1>
+          <p>They reflect the rich tapestry of India's culture and history.</p>
+        </div>
+      </div>
+    <div class="wrap">
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="https://m.media-amazon.com/images/I/91odtfOhJ-L._AC_UF1000,1000_QL80_.jpg" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <h3 class="box-title">The Ramayana</h3>
+              <p class="user-follow-info">By Valmiki</p>
+            </div>
+            <p class="description">
+      It is one of the two great Indian epics, traditionally attributed to the sage Valmiki. It narrates the life and adventures of Lord Rama, an incarnation of the Hindu god Vishnu, his wife Sita, and his loyal companion Hanuman.</p>
+          </div>
+          <a href="https://library.bjp.org/jspui/bitstream/123456789/231/1/Ramayana.of.Valmiki.by.Hari.Prasad.Shastri.pdf" class="button">Read Now</a>
+        </div>
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="https://m.media-amazon.com/images/I/61NdEWy4slL._AC_UF1000,1000_QL80_.jpg" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <h3 class="box-title">Mahabharatha</h3>
+              <p class="user-follow-info">By Vedha Vyasa</p>
+            </div>
+            <p class="description">It is one of the longest epic poems in the world, traditionally attributed to the sage Vyasa. It recounts the dynastic struggle for the throne of Hastinapura between the Pandavas and the Kauravas, two branches of the royal family, culminating in the great battle of Kurukshetra. </p>
+          </div>
+          <a href="https://library.bjp.org/jspui/bitstream/123456789/847/19/mahabharata-all-zip.zip" class="button">Read Now</a>
+        </div>
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="https://cdn.kobo.com/book-images/61365dbe-dc4c-42fb-a266-0000eac14c84/353/569/90/False/the-bhagavad-gita-40.jpg" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <h3 class="box-title">Bhagavad Gita</h3>
+              <p class="user-follow-info">By Vedha Vyasa</p>
+            </div>
+            <p class="description">The Bhagavad Gita, often referred to simply as the Gita, is a sacred Hindu scripture that forms a part of the Indian epic, the Mahabharata. It is a conversation between Prince Arjuna and the god Krishna, who serves as his charioteer. Set on the battlefield of Kurukshetra, the Gita unfolds as Arjuna faces a moral dilemma about fighting in the war against his own relatives and teachers.</p>
+          </div>
+          <a href="https://drive.usercontent.google.com/u/0/uc?id=0B5WZMlc4xl-8NThSSDJnTmE5N2M&export=download" class="button">Read Now</a>
+        </div>
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="https://cdn.kobo.com/book-images/5d9ff6e4-9700-433d-a3da-4511b36c8147/1200/1200/False/the-god-of-small-things-winner-of-the-booker-prize-1.jpg" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <h3 class="box-title">The God of Small Things</h3>
+              <p class="user-follow-info">By Arundhati Roy</p>
+            </div>
+            <p class="description">he narrative unfolds through non-linear storytelling, weaving together past and present, as well as the perspectives of various characters.The novel explores themes of love, family, societal norms, and the rigid caste system prevalent in Indian society. It delves into the complexities of relationships, secrets, and the consequences of societal expectations.</p>
+          </div>
+          <a href="https://d-pdf.com/book/336/read" class="button">Read Now</a>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="https://upload.wikimedia.org/wikipedia/en/a/a3/Midnight%27s_Children_Poster.jpg" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <h3 class="box-title">Mignight's Children</h3>
+              <p class="user-follow-info">By Salman Rushdie</p>
+            </div>
+            <p class="description">
+                It is a novel by Salman Rushdie that intertwines the personal and political narratives of Saleem
+                Sinai, a boy born at the stroke of midnight on August 15, 1947, the exact moment of India's independence from British
+                rule. As Saleem's life unfolds, it becomes intertwined with the fate of his nation. Gifted with telepathic abilities,
+                Saleem is part of a generation of children born at the same time, each possessing unique powers that reflect the
+                diversity and tumult of post-colonial India.</p>
+          </div>
+          <a href="http://www.sxcsrannalibrary.co.in/sites/default/files/Midnight%27s%20Children%20-%20Salman%20Rushdie.pdf" class="button">Read Now</a>
+        </div>
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="https://bitsnbooks.files.wordpress.com/2013/05/71a86-asuitableboy.jpg" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <h3 class="box-title">A Suitable Boy</h3>
+              <p class="user-follow-info">By Vikram Seth</p>
+            </div>
+            <p class="description">
+                "A Suitable Boy" is a sprawling novel by Indian author Vikram Seth, set in post-independence India during the early 1950s. The story revolves around the Mehras, a wealthy North Indian family, and follows the journey of Mrs. Rupa Mehra as she endeavors to find a suitable match for her daughter, Lata.
+                
+                Spanning over 1,300 pages, the novel intricately weaves together the lives of numerous characters from diverse backgrounds, reflecting the social, political, and cultural landscape of India during that period.</p>
+          </div>
+          <a href="http://103.47.12.35/bitstream/handle/1/1217/A%20Suitable%20Boy%20%28%20PDFDrive.com%20%29.pdf?sequence=1&isAllowed=y" class="button">Read Now</a>
+        </div>
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="https://m.media-amazon.com/images/I/91zPzrmb9yL._AC_UF1000,1000_QL80_.jpg" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <h3 class="box-title">Untouchable</h3>
+              <p class="user-follow-info">By  Mulk Raj Anand</p>
+            </div>
+            <p class="description">
+                It is a novel by Mulk Raj Anand, published in 1935, which provides a stark portrayal of the life of Bakha, an "untouchable" sweeper, over the course of a single day in colonial India. Set against the backdrop of societal prejudice and discrimination, the novel highlights the dehumanizing experiences faced by those relegated to the lowest rungs of India's caste system.</p>
+          </div>
+          <a href="https://www.ssgopalganj.in/online/E-Books/CLASS%20X/UNTOUCHABLE%20BY%20MULK%20RAJ%20ANAND.pdf" class="button">Read Now</a>
+        </div>
+      </div>
+      
+</body>

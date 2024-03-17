@@ -1,0 +1,27 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="{% static 'contact.css' %}">
+</head>
+<body>
+  <form method="POST">
+      {% csrf_token %}
+    {% include 'navbar.html' %}
+     <p id="contact">CONTACT US</p>
+     <div id="space">
+     <input  type="text" placeholder="NAME" name="name">
+     <input class="input1" type="text" placeholder="PHONE NUMBER" name="phonenumber">
+     
+     <input class="input1" type="text" placeholder="E-MAIL" name="email">
+     
+     <textarea id="textarea" placeholder="MESSAGE"  name="message" class="input1"></textarea>
+      <div id="butt"><input type="submit" value="SEND" class="input2"></div>
+    </div>
+      </form>
+    <img src="{% static 'contact.jpg' %}" alt="contactImg" >
+
+</body>
+</html>

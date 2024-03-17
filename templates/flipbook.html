@@ -1,0 +1,106 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="{% static 'css/flipbook.css' %}">
+    <script src="{% static 'css/flipbook.js' %}" defer></script>
+    <script src="https://kit.fontawesome.com/89b3b59743.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Previous-button -->
+    <button id="prev-btn">
+        <i class="fas fa-arrow-circle-left"></i>
+    </button>
+
+    <!-- BOOk -->
+    <div id="book" class="book">
+      <!-- paper1 -->
+      <div id="p1" class="paper">
+        <div class="front">
+            <div id="f1" class="front-content1">
+                <img src="{% static 'flipbookfront.jpg' %}" class="cover-img">
+            </div>
+        </div>
+        <!--BOOKS-->f
+        <div class="back">
+            <div id="b1" class="back-content">
+                <a href="{% url 'books' %}">
+                    <img src="https://ichef.bbci.co.uk/images/ic/1200x675/p0gl91h1.jpg"/>
+                </a>
+                <h3>Books</h3>
+            </div>
+
+        </div>
+
+      </div>
+       <!-- PEERLA PANDUGA-->
+       <div id="p2" class="paper">
+        <div class="front ">
+            <div id="f2" class="front-content">
+                <a href="{% url 'festive' %}">
+                    <img src="https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2019/07/30103043/festivas.jpg"/>
+                </a>
+                <h3>Festive Season</h3>
+            </div>
+        </div>
+        <!--BONALU FESTIVAL-->
+            <div class="back">
+            <div id="b2" class="back-content">
+                <a href="{% url 'temples' %}">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwy5yi9OyFdNeH_-zxdK2coM-V96dgVFr3Iw&usqp=CAU"/>
+                </a>
+                <h3>Temples</h3>
+            </div>
+
+        </div>
+       </div>
+        <!--Paper-->
+              <div id="p3" class="paper">
+        <div class="front ">
+            <div id="f3" class="front-content">
+                <a href="{% url 'adb' %}">
+                    <img src="https://cdn.shopify.com/s/files/1/0754/8901/files/krishna-sudama.jpg"/>
+                </a>
+                <h3>Athidhi Devo Bhava</h3>
+            </div>
+        </div>
+        <!--BONALU FESTIVAL-->
+            <div class="back">
+            <div id="b3" class="back-content">
+                <a href="{% url 'am' %}">
+                    <img src="https://youthincmag.com/wp-content/uploads/2022/10/modern-arranged-marriage.jpg"/>
+                </a>
+                <h3>Arranged Marriage</h3>
+            </div>
+
+        </div>
+       </div>
+        <div id="p4" class="paper">
+        <div class="front ">
+            <div id="f4" class="front-content">
+                <a href="{% url 'holycow' %}">
+                    <img src="https://c1.wallpaperflare.com/preview/643/745/205/indian-cow-cow-india-indian-india.jpg"/>
+                </a>
+                <h3>Holy cow</h3>
+            </div>
+        </div>
+        <!--BONALU FESTIVAL-->
+            <div class="back">
+            <div id="b4" class="back-content">
+                <a href="{% url 'namaste' %}">
+                    <img src="https://static.vecteezy.com/system/resources/previews/015/636/825/original/illustration-of-karma-depicted-with-namaste-indian-women-s-hand-greeting-posture-of-namaste-with-mandala-design-illustration-vector.jpg"/>
+                </a>
+                <h3>Namaste</h3>
+            </div>
+
+        </div>
+       </div>
+    </div>
+    <!-- Next-button -->
+    <button id="next-btn">
+        <i class="fas fa-arrow-circle-right"></i>
+    </button>
+</body>
+</html>

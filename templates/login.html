@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body style="background-image:url('{% static "backgroundLoginPage.jpg" %}')">
+    <div class="container">
+        <div class="div1">Login</div>
+        <div class="text1">Welcome! Login to get access to the page.</div>
+        <form method="post">
+            {% csrf_token %}
+            <div class="username">Email:</div>
+            <input class="input" type="text" name="email" required>
+            <div class="password">Password:</div>
+            <input class="input" type="password" name="password" required>
+            <div class="checkbox"><input type="checkbox" name="remember" value="Remember me">Remember me</div>
+            <div><button class="button" type="submit">LOGIN</button></div>
+            <div class="newuser">New User?<a href="{% url 'signup' %}">Signup</a><a class="forgot" href="#">Forgot your password?</a></div>
+        </form>
+    </div>
+    <script src=""></script>
+</body>
+</html>

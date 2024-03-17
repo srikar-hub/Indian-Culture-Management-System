@@ -1,0 +1,59 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arranged Marriage System</title>
+    <!-- Add any CSS stylesheets or meta tags here -->
+    <link rel="stylesheet" href="{% static 'css/ArrangedMarriage.css' %}">
+</head>
+<body>
+<div class="hero-nav">
+    <div class="hero-nav__inner">
+        <h1>Arranged Marriage System</h1>
+        <div class="hero-nav__button">
+            <a href="#" class="btn"></a>
+        </div>
+    </div>
+</div>
+<div class="page-content">
+    <h2>Swayamvara: The Tradition of Arranged Marriages</h2>
+    <p>Welcome to our exploration of the ancient tradition of arranged marriages, specifically focusing on the illustrious practice of Swayamvara in olden days. Join us as we journey through time to understand the intricacies, customs, and significance of this revered matrimonial ritual.</p>
+    <h2>The Essence of Swayamvara</h2>
+    <p>In ancient India, Swayamvara was a sacred ceremony where a princess would choose her life partner from a gathering of eligible suitors. The term "Swayamvara" itself translates to "self-choice" in Sanskrit, reflecting the fundamental principle that the decision rested solely with the bride-to-be. This tradition symbolized the empowerment and agency of women in selecting their spouses, albeit within the framework of familial and societal expectations.</p>
+    <h2>The Rituals and Customs</h2>
+    <p>Preparations for a Swayamvara were elaborate affairs, often spanning weeks or even months. Invitations were sent far and wide to noble families and princes, inviting them to participate in the auspicious event. On the appointed day, the suitors would assemble in the grand hall adorned with flowers and decorations, awaiting the arrival of the princess.</p>
+    <p>As the ceremony commenced, the princess would enter the hall, accompanied by her family members and courtiers. Dressed in resplendent attire and adorned with jewels, she would take her place on a throne or a decorated platform, signifying her royal status and authority.
+
+The suitors, each eager to win her hand, would present themselves before her, showcasing their valor, intellect, and charm through various displays of skill and talent. These could include feats of archery, poetry recitals, musical performances, or even philosophical debates.</p>
+
+    <h2>The Decision and Union</h2>
+    <p>Amidst the anticipation and tension, the princess would carefully observe each suitor, evaluating their merits and qualities. Ultimately, she would bestow her favor upon the one who captured her heart, symbolized by the exchange of garlands or a ceremonial gesture.</p>
+    <p>The chosen suitor would then be declared the victor, and the betrothal would be formalized through traditional rites and blessings by the priests and elders present. This marked the beginning of a new chapter in their lives, as they embarked on the journey of marriage and companionship, guided by the blessings of their families and the divine.</p>
+    <h2>Legacy and Modern Relevance</h2>
+    <p>While the practice of Swayamvara has evolved over the centuries, its essence continues to resonate in modern-day arranged marriages. While the concept of self-choice remains central, it is often intertwined with familial considerations, compatibility assessments, and social dynamics.</p>
+    <p>In conclusion, Swayamvara stands as a testament to the rich tapestry of Indian cultural heritage, reflecting values of agency, tradition, and familial harmony. By understanding its historical significance and evolution, we gain insight into the enduring legacy of arranged marriages in shaping matrimonial unions across generations. Join us in honoring this ancient tradition and celebrating the timeless institution of marriage in all its splendor and diversity.</p>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    var heroShinker = function() {
+        var hero = $('.hero-nav'),
+            heroHeight = $('.hero-nav').outerHeight(true);
+            $(hero).parent().css('padding-top', heroHeight);
+        $(window).scroll(function() {
+            var scrollOffset = $(window).scrollTop();
+            if (scrollOffset < heroHeight) {
+                $(hero).css('height', (heroHeight - scrollOffset));
+            }
+            if (scrollOffset > (heroHeight - 215)) {
+                hero.addClass('fixme');
+            } else {
+                hero.removeClass('fixme');
+            };
+        });
+    }
+    heroShinker();
+</script>
+
+</body>
+</html>

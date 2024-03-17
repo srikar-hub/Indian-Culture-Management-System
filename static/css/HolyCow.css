@@ -1,0 +1,121 @@
+// -------------------------------------------------------------
+// Variables
+
+// Colors
+$g1: #FF4F33
+$g2: #FF9133
+$g3: #F9FEA5
+$text: #204754
+
+// Easing
+$zease: cubic-bezier(0.165, 0.84, 0.44, 1)
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275)
+
+// -------------------------------------------------------------
+// Globals
+
+html, body
+  margin: 0
+
+html
+  min-height: 100%
+  box-sizing: border-box
+  font-size: 10px
+
+body
+  height: 100%
+  width: 100%
+  background-image: linear-gradient(180deg, $g1 0%, $g2 40%, $g3 100%)
+  background-repeat: no-repeat
+
+*, *:before, *:after
+  box-sizing: inherit
+
+// -------------------------------------------------------------
+// Typography
+
+h1, p
+  color: $text
+  font-family: 'Nunito', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+h1
+  margin-bottom: 1rem
+  font-size: 4rem
+
+p
+  font-size: 2rem
+  line-height: 2.8rem
+
+  &:last-child
+    margin-bottom: -6px
+
+// -------------------------------------------------------------
+// Main
+
+.site-wrap
+  max-width: 700px
+  margin: 0 auto
+  padding: 10rem 2rem
+
+section
+  margin-bottom: 10rem
+  padding: 4rem
+  background: white
+  border-radius: 8px
+  box-shadow: 0px 0px 0 1px transparentize($text, 0.97), 0px 0px 0 3px transparentize($text, 0.98)
+
+  &:last-child
+    margin-bottom: 0
+
+[data-scroll]
+  opacity: 0
+  will-change: transform, scale, opacity
+  transform: translateY(6rem) scale(0.93)
+  transition: all 1.5s $zease
+
+[data-scroll="in"]
+  opacity: 1
+  transform: translateY(0) scale(1)
+
+// -------------------------------------------------------------
+// Headline Animation
+.splitting
+  .char
+    color: transparent
+
+    &:after
+      visibility: visible
+      color: $text
+      opacity: 0
+      transform: translateY(30%)
+      transition: all .6s $easeOutBack
+      transition-delay: calc(.2s + (.04s * var(--char-index) ) )
+
+[data-scroll="in"]
+  .char:after
+    opacity: 1
+    transform: translateY(0)
+
+// -------------------------------------------------------------
+// Media Queries
+
+@media (max-width: 600px)
+
+  h1
+    font-size: 3.4rem
+    line-height: 3.6rem
+
+  p
+    font-size: 1.7rem
+    line-height: 2.5rem
+
+  .site-wrap
+    padding: 6rem 1rem
+
+  section
+    margin-bottom: 6rem
+    padding: 2.4rem
+
+
